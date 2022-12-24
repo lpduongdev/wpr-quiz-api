@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Quiz</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Pangolin:400,700|Proxima+Nova"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer="true"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h2 class="header__title">WPR</h2>
+      <ul class="header__mern-stack">
+        <li class="mern__item">M</li>
+        <li class="mern__item">E</li>
+        <li class="mern__item">R</li>
+        <li class="mern__item">N</li>
+      </ul>
+    </header>
+
+    <article id="nav-container">
+      <section id="quiz-name">
+        <img
+          class="quiz-name__image match-parent"
+          src="images/background.jpg"
+          alt="quiz"
+        />
+        <h1 class="quiz-name__title">HTML Quiz</h1>
+      </section>
+
+      <section id="introduction" class="visible">
+        <p class="introduction__author">By Nguyen Tran</p>
+        <div class="introduction__description">
+          <h2 class="description__title">The Test</h2>
+          <p class="description__text">
+            The test contains 10 questions and there is no time limit.
+          </p>
+          <p class="description__text">
+            The test is not official, it's just a nice way to see how much you
+            know, or don't know, about HTML.
+          </p>
+        </div>
+        <div class="introduction__description">
+          <h2 class="description__title">Count Your Score</h2>
+          <p class="description__text">
+            You will get 1 point for each correct answer. At the end of the
+            Quiz, your total score will be displayed. Maximum score is 10
+            points.
+          </p>
+        </div>
+        <div class="card">
+          <h2 class="card__title">Start the quiz</h2>
+          <p class="card__description">Good luck!</p>
+          <button id="btn-start" class="btn btn--blue">
+            Start the HTML quiz ❯
+          </button>
+        </div>
+      </section>
+
+      <section id="attempt-quiz" class="hidden">
+        <ul class="questions"></ul>
+        <div class="card">
+          <button id="btn-submit" class="btn btn--green">
+            Submit your answers
+          </button>
+        </div>
+      </section>
+
+      <section id="review-quiz" class="hidden">
+        <ul class="questions"></ul>
+        <section class="card">
+          <h2 class="card__title">Result:</h2>
+          <span class="result__score">1/10</span>
+          <strong class="result__percent">10%</strong>
+          <p class="card__description">Practice more to improve it :D</p>
+          <button id="btn-retry" class="btn btn--blue">Try again</button>
+        </section>
+      </section>
+    </article>
+  </body>
+</html>
